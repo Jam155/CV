@@ -1,5 +1,6 @@
 \documentclass[10pt]{article}
 \usepackage[margin=3cm]{geometry}
+\usepackage{array, xcolor, lipsum}
 \title{\bfseries\Huge James L. Lendrem\\Web Developer}
 \author{Jamlendrem@gmail.com}
 
@@ -13,5 +14,17 @@ Newcastle Upon Tyne\\
 NE3 2LD\\
 United Kingdom\\
 \end{minipage}
+
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+\section*{Professional Experience}
+\begin{tabular}{L!{\VRule}R}
+2011--today&{\bf PHP Developer at Kino Creative.}\\
+&\lipsum[66]\\
+2008--2011&{\bf Co-Proprietor at Smooth Lines.}\\
+&\lipsum[66]\\
+\end{tabular}
 
 \end{document}
